@@ -136,7 +136,7 @@ Tras crear los archivos, los editamos.
        '''Index page route'''
        return '<h1>App desplegada</h1>'
 
-.. code-bloc:: python
+.. code-block:: python
    :caption: Contenido de ``/var/www/app/wsgi.py``
 
    from application import app
@@ -204,7 +204,8 @@ es el path o ruta desde la que se ejecuta ``gunicorn`` para poder
 configurar más adelante un servicio del sistema. Podemos averigurarlo
 así:
 
-.. code-block:: console		
+.. code-block:: console
+
    (app) vagrant@bullseye:/var/www/app$ which gunicorn
    /home/vagrant/.local/share/virtualenvs/app-1lvW3LzD/bin/gunicorn
 
