@@ -1,9 +1,9 @@
 Vagrant.configure("2") do |config|
-  config.vm.define "practica" do |p|
+  config.vm.define "practica_tarea" do |p|
     p.vm.box = "debian/bullseye64"
-    p.vm.hostname = "practica"
+    p.vm.hostname = "practica_tarea"
     p.vm.network "forwarded_port", guest: 8080, host: 8080
-    p.vm.network "private_network", ip: "192.168.11.11"
+    p.vm.network "private_network", ip: "192.168.12.12"
     p.vm.provision "shell", name: "nginx", inline: <<-SHELL
       apt-get update
       apt-get install -y nginx git
